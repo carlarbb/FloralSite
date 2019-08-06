@@ -1,0 +1,19 @@
+
+html{font-size:14px;}
+section#continut>section{
+	padding:1em;
+}
+section#continut figure+p{
+	clear:both;
+}
+figure.fig{float:none;
+width:100%;
+}
+div.polaroid{
+	width:80%;
+	height:100%;
+}
+iframe#video{
+	width:80%;
+	height:100%;
+}

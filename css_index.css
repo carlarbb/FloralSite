@@ -1,0 +1,41 @@
+article#stiati_ca>ol{
+	padding-left:1em;
+}
+div#animatie{
+	position:relative;
+	padding-bottom:10%;
+	padding-top:10%;
+}
+div#animatie>img{
+	position:relative;
+	top:40%;
+	left:5%;
+	width:10em;
+	height:10em;
+	animation-name:flower;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+div#animatie>img+img{
+	position:absolute;
+	left:-200px;
+	bottom:50px;
+	visibility:hidden;
+}
+div#animatie>img:active{
+	opacity:0.5;
+	visibility:hidden;
+	width:11em;
+	height:11em;
+}
+div#animatie>img:active+img{
+	visibility:visible;
+}
+@keyframes flower
+	{
+		50%{left:75%;}
+		100%{left:5%; 
+		transform:rotate(360deg);
+		}
+	}

@@ -1,0 +1,28 @@
+html{font-size:12px;}
+img.left{
+		display:none;
+}
+figcaption{
+	display:none;
+}
+section#continut>section{
+	padding:1em;
+}
+div.polaroid{
+	width:80%;
+	height:100%;
+}
+iframe#video{
+	width:80%;
+	height:100%;
+}
+ul.menu>li{
+	float:none;
+	width:100%;
+}
+div#animatie{
+	display:none;
+}
+img.center{
+	height:50%;
+}

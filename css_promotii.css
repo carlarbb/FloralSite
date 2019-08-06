@@ -1,0 +1,20 @@
+table>tbody>tr{
+	counter-increment:promotii;
+}
+table>tfoot span:after{
+	content:"Nr. total promotii: "counter(promotii);
+}
+body{
+	counter-reset:promotii;
+}
+tr,td {border:1px solid black;}
+
+table{
+	position:relative;
+	width:90%;
+	border-collapse:collapse;
+	left:1em;
+	
+}
+
+#tabel>h2 {padding-left:1em;}

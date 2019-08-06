@@ -1,0 +1,87 @@
+ul.menu, ul.submenu{
+color:white;
+text-decoration:none;
+outline:none;
+}
+ul.menu, ul.submenu{
+		margin:0px;
+		padding:0px;
+		text-indent:0px;
+}
+ul.menu>li, ul.menu>li>ul.submenu>li{
+		display:block;
+		cursor: pointer;
+		/* buton din menu cu text centrat si pe verticala, si pe orizontala */
+		/* vertical-align aliniaza in functie de rand, nu de element */
+		/*font-size:1vw;*/
+		font-size:1.2rem;
+		font-weight:bold;
+		height:1.2rem;
+		text-align:center;
+		line-height:1.2rem; /* pt centrare pe verticala, aceeasi dim cu height  */
+		list-style-type:none; /* ascunde bullets */
+		overflow:hidden; /* ascunde submeniul */													
+		padding:0px;
+		margin:0px;
+	}
+	ul.menu>li>a,ul.submenu>li>a, ul.menu>li>div{
+		transition: background 2s ease;
+	}
+	ul.menu>li{
+	 float:left; /* aliniaza elementul la stanga si permite unui alt element sa fie asezat langa */
+	 width:25%; /* sunt 8 butoane=> latime totala 100% */
+	 background:url("Imagini/wood.jpg");
+	 transition: background 0.7s ease;
+	}
+	ul.submenu>li>a{
+	 width:100%;
+	 background:url("Imagini/wood2.jpg");
+	}
+	ul.menu>li>a,ul.submenu>li>a,ul.menu>li>div{
+		display:block; /* pt a putea stiliza textul */
+		/* width e by default 100% */
+		height:	100%; /*cat e li */
+		text-decoration:none;
+	}
+
+	ul.menu>li>ul.submenu{
+		position:relative;
+		top:0px;
+	}
+
+	ul.menu>li>ul.submenu>li
+	{
+		border-top:1px solid black;
+	}
+	ul.menu>li>ul.submenu>li:last-child
+	{
+		border-bottom:1px solid black;
+	}
+	ul.menu>li:hover{
+		overflow:visible;
+	}
+
+	ul.menu>li>a:hover, ul.menu>li>div:hover{
+		background:chocolate;
+		color:black;
+		text-decoration:none;
+	}
+	ul.submenu>li>a:hover{
+		background: url("Imagini/gold.jpg");
+		color:yellow;
+	}
+	ul.menu>li>a, ul.submenu>li>a{
+		color:white;
+	}
+	header nav>ul>li>a:active, header nav>ul>li>div:active{
+		animation:earth 5s;
+	}
+	@keyframes earth
+	{
+		0%{transform:rotate(7deg);}
+		3%{transform:rotate(-7deg);}
+		5%{transform:rotate(7deg);}
+		7%{transform:rotate(-7deg);}
+		9%{transform:rotate(7deg);}
+		10%{transform:rotate(-7deg);}
+	}
